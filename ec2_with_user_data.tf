@@ -13,7 +13,7 @@ resource "aws_instance" "a5-instance" {
   key_name      = ""  # SSH key name for instance access (fill with actual key name)
 
   # User data to run at instance initialization; uses a local script file
-  user_data = file("${path.module}/install-apache2.sh")  # Corrected to properly load the script
+  user_data = "${file("install-apache2.sh")}" # Corrected to properly load the script
 
   # Tags for resource identification and management
   tags = {
