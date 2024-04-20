@@ -1,3 +1,5 @@
+# This script is useful for creating an EC2 instance with an elastic IP assigned to it
+
 # Provider configuration for AWS
 provider "aws" {
   region     = "us-east-2"  # AWS region where resources will be created
