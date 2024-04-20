@@ -1,3 +1,6 @@
+//This script is useful for creating an EC2 instance in the default VPC
+
+
 // Provider configuration for AWS
 provider "aws" {
   region     = "us-east-2" // Specify the AWS region
